@@ -11,6 +11,10 @@ etiqueta "a"*/
 .header :hover {
     color: aquamarine;
 }
+.header__nav .active {
+    background-color: rgb(72, 161, 225);
+
+}
 
 .header {
     display: flex;
@@ -44,10 +48,7 @@ etiqueta "a"*/
 
 }
 
-.header__nav .active {
-    background-color: rgb(72, 161, 225);
 
-}
 
 @media only screen and (min-width: 768px) {
     .header {
@@ -654,13 +655,14 @@ option {
 
     .raffle_contenedor-map {
         width: 40%;
-        height: 800px;
+        height: 600px;
         justify-content: center;
         align-items: center;
     }
 
     .raffle_contenedor {
         flex-wrap: wrap-reverse;
+        align-items: flex-end;
     }
 }
 
@@ -668,7 +670,7 @@ option {
 @media only screen and (min-width: 1200px) {
     .raffle_contenedor-map {
         width: 30%;
-        height: 800px;
+        height: 600px;
         justify-content: center;
         align-items: center;
     }
@@ -676,5 +678,9 @@ option {
     .contenedor_form-label {
         width: 30%;
         height: 90vh;
+    }
+    .raffle_contenedor {
+        flex-wrap: wrap-reverse;
+        align-items: flex-end;
     }
 }
